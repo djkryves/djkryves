@@ -122,12 +122,15 @@
 </div>
 
 <audio id="scratchSound" src="sounds/scratch.mp3"></audio>
+<audio id="djMusic" src="static/musics/djMusic.mp3"></audio>
+    
 <div class="light-transition" id="lightTransition"></div>
 
 <script>
     const vinylImage = document.getElementById('vinylImage');
     const imageContainer = document.getElementById('imageContainer');
     const scratchSound = document.getElementById('scratchSound');
+    const djMusic = document.getElementById('djMusic');
     const lightTransition = document.getElementById('lightTransition');
     const hiddenText = document.getElementById('hiddenText');
     const hiddenImage = document.getElementById('hiddenImage');
@@ -146,6 +149,7 @@
         vinylImage.addEventListener('animationend', () => {
             vinylImage.style.animation = '';
             setTimeout(startAnimation, 1);
+            djMusic.play();
         }, { once: true });
     });
 
