@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dj Kryves</title>
+    <link rel="stylesheet" href="static/css/bouncingNotes.css">
     <style>
         @font-face {
           font-family: 'MyCustomFont';
@@ -144,6 +145,7 @@
 
         vinylImage.addEventListener('animationend', () => {
             vinylImage.style.animation = '';
+            setTimeout(startAnimation, 1);
         }, { once: true });
     });
 
@@ -152,5 +154,6 @@
             hiddenImage.classList.add('active');
         }
 </script>
+<script src="static/js/bouncingNotes.js"></script>
 </body>
 </html>
