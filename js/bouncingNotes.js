@@ -1,4 +1,4 @@
-const imageSources = ["static/images/nota.png", "static/images/nota2.png"];
+const imageSources = ["images/nota.png", "images/nota2.png"];
 const numImagesPerType = 50;
 const images = [];
 const positions = [];
